@@ -2830,7 +2830,7 @@ margin-top:40px;
 .bg-brand{
 	background-color:#8e6c4f !important;
 }
-  .etichetta{
+  .etichetta,.badge{
 	background-color:white;
 	border:2px solid #8e6c4f;
 	color:#8e6c4f;
@@ -2843,4 +2843,27 @@ margin-top:40px;
 	background-color:#8e6c4f;
 	color:white;
 	transition:all .3s ease-in-out;
+}
+  .product-form__input input[type=radio]:checked+label{
+	background-color:#8e6c4f !important;
+	color:white !important;
+	font-weight:bold;
+}
+.product-form__input input[type=radio]+label{
+	 border:2px solid #8e6c4f !important;
+	color:#8e6c4f !important;
+}
+  .list-social{
+	justify-content:space-between !important;
+	padding-top:2rem;
+}
+  .list-social__item .icon{
+	color:white !important;
+}
+  .footer-block__heading{
+	color: white !important;
+    font-weight: bold !important;
+}
+  .footer-block__details-content,.footer-block__details-content>:first-child .list-menu__item--link{
+	    color: white !important;
 }

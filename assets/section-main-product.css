@@ -97,7 +97,7 @@
 }
 
 .shopify-payment-button__button--unbranded {
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  background-color: #8e6c4f !important;
   color: rgb(var(--color-button-text));
   font-size: 1.4rem;
   line-height: calc(1 + 0.2 / var(--font-body-scale));
@@ -105,12 +105,18 @@
 }
 
 .shopify-payment-button__button--unbranded::selection {
-  background-color: rgba(var(--color-button-text), 0.3);
+  background-color: #8e6c4f;
 }
 
 .shopify-payment-button__button--unbranded:hover,
 .shopify-payment-button__button--unbranded:hover:not([disabled]) {
-  background-color: rgba(var(--color-button), var(--alpha-button-background));
+  color: #8e6c4f !important;
+  background-color:white !important;
+  border:2px solid #8e6c4f;
+  font-weight:bold;
+	text-decoration:underline;
+  transition:all .1s ease-in-out; 
+  --border-opacity:none;	
 }
 
 .shopify-payment-button__more-options {
@@ -256,6 +262,10 @@ fieldset.product-form__input .form__label {
 
 .product-form__submit {
   margin-bottom: 1rem;
+  border:2px solid #8e6c4f!important;
+  color:#8e6c4f!important;
+  font-weight:bold;
+  --border-offset:none;
 }
 
 .no-js .product-form__submit.button--secondary {
